@@ -10,12 +10,17 @@ const getPokemons = () => {
 
 const getPokemonOptions = () => {
     
-    const mixPokemons = getPokemons().sort( () => Math.random() -0.5 )
+    const mixPokemons = getPokemons()
+                            .sort( () => Math.random() -0.5 )
 
-    console.log(mixPokemons)
-
+    getPokemonsNames( mixPokemons.splice(0,4) ) // Corta y toma los primero 4 
 }
 
+const getPokemonsNames = ( pokemons = [] ) => { // Unicamnete debo recibir un arreglo
+
+    console.log(pokemons);
+
+}
 
 
 export default getPokemonOptions;
