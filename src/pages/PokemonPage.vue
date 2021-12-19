@@ -1,7 +1,7 @@
 <template>
     <h1>¿Quien es este Pokemon?</h1>
     <!-- TODO: Picture -->
-    <PokemonPicture />
+    <PokemonPicture :pokemonId="4" />
 
     <!-- TODO: Opciones -->
     <PokemonOptions />
