@@ -1,3 +1,4 @@
+import pokemonApi from "../api/pokemonApi"
 
 const getPokemons = () => {
 
@@ -16,11 +17,18 @@ const getPokemonOptions = () => {
     getPokemonsNames( mixPokemons.splice(0,4) ) // Corta y toma los primero 4 
 }
 
-const getPokemonsNames = ( pokemons = [] ) => { // Unicamnete debo recibir un arreglo
+// const getPokemonsNames = ( pokemons = [] ) => { // Unicamnete debo recibir un arreglo
+const getPokemonsNames = async( [a,b,c,d] = [] ) => { // Desestructuramos el areglo
 
-    console.log(pokemons);
+        // Forma de extraer la data
+    // const resp = await pokemonApi.get(`/1`)  
+    // console.log(resp.data.name, resp.data.id);
+
+    // console.log(a,b,c,d);
 
 }
+
+
 
 
 export default getPokemonOptions;
